@@ -1,10 +1,41 @@
-<html>
-  <head> </head>
+<!DOCTYPE html>
+<html lang="en">
+ <meta charset="utf-8"/>
+ <title> Forms</title>
   <body>
+  <script type="text/javascript">
+
+ 
+    function Info(){
+     
+    b1 = document.getElementById('1');
+    b2 = document.getElementById('2');
+    b3 = document.getElementById('3');
+    b4 = document.getElementById('4');
+    b5 = document.getElementById('5');
+    b6 = document.getElementById('6');
+    b7 = document.getElementById('7');
+    b8 = document.getElementById('8');
+     
+    b1.innerHTML = "Full Name: "+fullname.value;
+    b2.innerHTML = "Address: "+address.value;
+    b3.innerHTML = "Age: "+age.value;
+    b4.innerHTML = "Gender: "+gender.value;
+    b5.innerHTML = "Birthdate: "+birthday.value;
+    b6.innerHTML = "Hobbies: "+hobbies.value;
+    b7.innerHTML = "Cellphone No: "+cellphone.value;
+    b8.innerHTML = "Email Address: "+email.value;
+   
+    }
+    </script>
+
   <body bgcolor="pink">
     <title>CpE3_LabActivity_1</title>
+    <div id="form">
+      <form>
 <h1 style="color:DD33FF;">Personal Information</h1>
     <label for="fullname">Full Name:</label>
+
     <input
       type="text"
       id="fullname"
@@ -22,7 +53,7 @@
     />
     <br />
     <br />
-    <label for="fullname"
+    <label for="age"
       >Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
     >
     <input type="text" id="age" name="age" placeholder="(Enter age))" />
@@ -30,10 +61,10 @@
     <br />
     <label for="birthday">Birthday:&nbsp;&nbsp;&nbsp;</label>
     <input
-      type="text"
+      type="date"
       id="birthday"
       name="birthday"
-      placeholder="(Enter Birthdate)"
+      
     />
     <br />
     <br />
@@ -48,16 +79,16 @@
     <br />
     <label for="gender">Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
     <select id="gender" name="gender">
-      <option value="placeholder">Select Gender</option>
+      <option value="">Select Gender</option>
       <option value="female">Female</option>
       <option value="male">Male</option>
     </select>
     <br />
     <br />
-    <label for="cellphonenumber">Cell No:&nbsp;&nbsp;&nbsp;</label>
+    <label for="cellphone">Cell No:&nbsp;&nbsp;&nbsp;</label>
     <input
       type="text"
-      id="cellphonenumber"
+      id="cellphone"
       name="cellphonenumber"
       placeholder="(Enter Cell No.)"
     />
@@ -72,10 +103,21 @@
     />
     <br />
     <br />
+    <input type="button" value="Submit"  onclick="Info(); " />
 
-    <script>
-    function myFunction() { document.getElementById("das").innerHTML = "Hello World";}
-    </script>
+
+
+    <b><p id="1"></p></b>
+    <b><p id="2"></p></b>
+    <b><p id="3"></p></b>
+    <b><p id="4"></p></b>
+    <b><p id="5"></p></b>
+    <b><p id="6"></p></b>
+    <b><p id="7"></p></b>
+    <b><p id="8"></p></b>
+    
+    
+   </form>
     
       
      
